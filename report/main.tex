@@ -1,1 +1,28 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[backend=biber]{biblatex}
 
+\bibliography{refs}
+
+\title{Automatized Aquaponics with Arduino}
+\author{Guilherme Alcarde Gallo}
+
+\addbibresource{refs}
+\begin{document}
+
+\section{State of Art}
+\label{sec:state_of_art}
+
+\input{inspiration}
+
+\section{Required Components}
+\label{sec:required_components}
+
+\include{components}
+
+\section{Proof of Concept}
+\label{sec:proof_of_concept}
+
+\include{poc}
+
+\printbibliography
+\end{document}
