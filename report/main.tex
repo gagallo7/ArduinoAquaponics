@@ -1,5 +1,14 @@
 \documentclass[11pt,a4paper]{article}
-\usepackage[backend=biber]{biblatex}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+
+\usepackage{csquotes}
+\usepackage{hyperref}
+
+\usepackage[
+backend=biber,
+citestyle=authoryear 
+]{biblatex}
 
 \bibliography{refs}
 
@@ -17,12 +26,12 @@
 \section{Required Components}
 \label{sec:required_components}
 
-\include{components}
+\input{components}
 
 \section{Proof of Concept}
 \label{sec:proof_of_concept}
 
-\include{poc}
+\input{poc}
 
 \printbibliography
 \end{document}
