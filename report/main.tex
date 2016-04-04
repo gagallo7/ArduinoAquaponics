@@ -7,16 +7,18 @@
 
 \usepackage[
 backend=biber,
+style=alphabetic,
 citestyle=authoryear 
 ]{biblatex}
 
-\bibliography{refs}
+\addbibresource{jabref.bib}
 
 \title{Automatized Aquaponics with Arduino}
-\author{Guilherme Alcarde Gallo \and Christian Esteve Rothenberg}
+\author{Guilherme Alcarde Gallo \and Christian Esteve Rothenberg \and Edmundo Roberto Mauro Madeira}
 
-\addbibresource{refs}
 \begin{document}
+
+\maketitle
 
 \section{State of Art}
 \label{sec:state_of_art}
@@ -33,5 +35,5 @@ citestyle=authoryear
 
 \input{poc}
 
-\printbibliography
+
 \end{document}
