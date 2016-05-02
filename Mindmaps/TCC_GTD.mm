@@ -196,6 +196,12 @@
   </body>
 </html>
 </richcontent>
+<node TEXT="Bring the batteries to collection" ID="ID_614095879" CREATED="1462213145651" MODIFIED="1462213177561">
+<icon BUILTIN="yes"/>
+</node>
+<node TEXT="Make a DIY House" ID="ID_1318123431" CREATED="1462213179660" MODIFIED="1462213193824">
+<icon BUILTIN="yes"/>
+</node>
 </node>
 <node TEXT="Projects" LOCALIZED_STYLE_REF="AutomaticLayout.level,1" POSITION="right" ID="ID_1256051703" CREATED="1427225914994" MODIFIED="1453649695121">
 <icon BUILTIN="desktop_new"/>
@@ -226,22 +232,24 @@
 </html>
 </richcontent>
 <node TEXT="TCC" ID="ID_1702781550" CREATED="1460585565266" MODIFIED="1460585637213">
-<node TEXT="program" ID="ID_190793938" CREATED="1460585545546" MODIFIED="1460681605279">
+<node TEXT="program" ID="ID_190793938" CREATED="1460585545546" MODIFIED="1462213193831">
 <icon BUILTIN="yes"/>
 <icon BUILTIN="Mail"/>
+<icon BUILTIN="full-1"/>
 <attribute NAME="Where" VALUE="email"/>
+<attribute NAME="Priority" VALUE="1" OBJECT="org.freeplane.features.format.FormattedNumber|1"/>
 </node>
-<node TEXT="Make a mindmap with paragraphs" ID="ID_575818555" CREATED="1460585648180" MODIFIED="1460681605283">
+<node TEXT="Insert Rik important notes" ID="ID_1331863585" CREATED="1460681553882" MODIFIED="1462213193836">
 <icon BUILTIN="yes"/>
-<attribute NAME="Where" VALUE="IC"/>
+<attribute NAME="Where" VALUE="PC,MM"/>
 </node>
-<node TEXT="Create a FSM diagram as an example" ID="ID_400687816" CREATED="1460681446238" MODIFIED="1460681605289">
+<node TEXT="FSM" ID="ID_232015446" CREATED="1462213835418" MODIFIED="1462213838964">
+<node TEXT="Create a FSM diagram as an example" ID="ID_400687816" CREATED="1460681446238" MODIFIED="1462213193835">
 <icon BUILTIN="yes"/>
 <attribute NAME="Where" VALUE="MM"/>
 </node>
-<node TEXT="Insert Rik important notes" ID="ID_1331863585" CREATED="1460681553882" MODIFIED="1460681605294">
-<icon BUILTIN="yes"/>
-<attribute NAME="Where" VALUE="PC,MM"/>
+<node TEXT="Write an Arduino code for it" ID="ID_699262307" CREATED="1462213896152" MODIFIED="1462213905037"/>
+<node TEXT="Integrate Arduino code with 123d circuits" ID="ID_927155640" CREATED="1462213843463" MODIFIED="1462213894916"/>
 </node>
 </node>
 </node>
@@ -273,6 +281,11 @@
   </body>
 </html>
 </richcontent>
+<node TEXT="Make a mindmap with paragraphs" ID="ID_575818555" CREATED="1460585648180" MODIFIED="1462213830856">
+<icon BUILTIN="yes"/>
+<icon BUILTIN="button_ok"/>
+<attribute NAME="Where" VALUE="IC"/>
+</node>
 </node>
 </node>
 </map>
