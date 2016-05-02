@@ -232,21 +232,24 @@
 </html>
 </richcontent>
 <node TEXT="TCC" ID="ID_1702781550" CREATED="1460585565266" MODIFIED="1460585637213">
-<node TEXT="program" ID="ID_190793938" CREATED="1460585545546" MODIFIED="1462213193831">
+<node TEXT="program" ID="ID_190793938" CREATED="1460585545546" MODIFIED="1462229477587">
 <icon BUILTIN="yes"/>
 <icon BUILTIN="Mail"/>
 <icon BUILTIN="full-1"/>
 <attribute NAME="Where" VALUE="email"/>
 <attribute NAME="Priority" VALUE="1" OBJECT="org.freeplane.features.format.FormattedNumber|1"/>
 </node>
-<node TEXT="Insert Rik important notes" ID="ID_1331863585" CREATED="1460681553882" MODIFIED="1462213193836">
+<node TEXT="Insert Rik important notes" ID="ID_1331863585" CREATED="1460681553882" MODIFIED="1462229477590">
 <icon BUILTIN="yes"/>
 <attribute NAME="Where" VALUE="PC,MM"/>
 </node>
 <node TEXT="FSM" ID="ID_232015446" CREATED="1462213835418" MODIFIED="1462213838964">
-<node TEXT="Create a FSM diagram as an example" ID="ID_400687816" CREATED="1460681446238" MODIFIED="1462213193835">
+<node TEXT="Create a FSM diagram as an example" ID="ID_400687816" CREATED="1460681446238" MODIFIED="1462229477593">
 <icon BUILTIN="yes"/>
 <attribute NAME="Where" VALUE="MM"/>
+</node>
+<node TEXT="Compare FSM libs" ID="ID_933684092" CREATED="1462229465843" MODIFIED="1462229477595">
+<icon BUILTIN="yes"/>
 </node>
 <node TEXT="Write an Arduino code for it" ID="ID_699262307" CREATED="1462213896152" MODIFIED="1462213905037"/>
 <node TEXT="Integrate Arduino code with 123d circuits" ID="ID_927155640" CREATED="1462213843463" MODIFIED="1462213894916"/>
@@ -281,7 +284,7 @@
   </body>
 </html>
 </richcontent>
-<node TEXT="Make a mindmap with paragraphs" ID="ID_575818555" CREATED="1460585648180" MODIFIED="1462213830856">
+<node TEXT="Make a mindmap with paragraphs" ID="ID_575818555" CREATED="1460585648180" MODIFIED="1462229477598">
 <icon BUILTIN="yes"/>
 <icon BUILTIN="button_ok"/>
 <attribute NAME="Where" VALUE="IC"/>
