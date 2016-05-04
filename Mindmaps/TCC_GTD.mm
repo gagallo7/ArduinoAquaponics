@@ -1,6 +1,6 @@
 <map version="freeplane 1.3.0">
 <!--To view this file, download free mind mapping software Freeplane from http://freeplane.sourceforge.net -->
-<node TEXT="My tasks" LOCALIZED_STYLE_REF="AutomaticLayout.level.root" ID="ID_1723255651" CREATED="1283093380553" MODIFIED="1460586080495">
+<node TEXT="My tasks" LOCALIZED_STYLE_REF="AutomaticLayout.level.root" ID="ID_1723255651" CREATED="1283093380553" MODIFIED="1462321975049">
 <icon BUILTIN="mindmap"/>
 <hook NAME="MapStyle">
     <properties show_icon_for_attributes="true"/>
@@ -168,7 +168,7 @@
 <icon BUILTIN="gohome"/>
 </node>
 </node>
-<node TEXT="Inbox" LOCALIZED_STYLE_REF="AutomaticLayout.level,1" POSITION="right" ID="ID_1133937836" CREATED="1427225825443" MODIFIED="1453649696945">
+<node TEXT="Inbox" LOCALIZED_STYLE_REF="AutomaticLayout.level,1" POSITION="right" ID="ID_1133937836" CREATED="1427225825443" MODIFIED="1462321975048" HGAP="-170" VSHIFT="-185">
 <icon BUILTIN="edit"/>
 <edge COLOR="#ff0000"/>
 <richcontent TYPE="DETAILS" HIDDEN="true">
@@ -196,9 +196,6 @@
   </body>
 </html>
 </richcontent>
-<node TEXT="Bring the batteries to collection" ID="ID_614095879" CREATED="1462213145651" MODIFIED="1462213177561">
-<icon BUILTIN="yes"/>
-</node>
 <node TEXT="Make a DIY House" ID="ID_1318123431" CREATED="1462213179660" MODIFIED="1462213193824">
 <icon BUILTIN="yes"/>
 </node>
@@ -232,7 +229,7 @@
 </html>
 </richcontent>
 <node TEXT="FSM" ID="ID_232015446" CREATED="1462213835418" MODIFIED="1462213838964">
-<node TEXT="Create a FSM diagram as an example" ID="ID_400687816" CREATED="1460681446238" MODIFIED="1462313100493">
+<node TEXT="Create a FSM diagram as an example" ID="ID_400687816" CREATED="1460681446238" MODIFIED="1462323292174">
 <icon BUILTIN="yes"/>
 <attribute NAME="Where" VALUE="MM"/>
 </node>
@@ -242,20 +239,56 @@
 <node TEXT="Write an Arduino code for it" ID="ID_699262307" CREATED="1462213896152" MODIFIED="1462213905037"/>
 <node TEXT="Integrate Arduino code with 123d circuits" ID="ID_927155640" CREATED="1462213843463" MODIFIED="1462213894916"/>
 </node>
-<node TEXT="Meetings" ID="ID_42748413" CREATED="1462313067917" MODIFIED="1462313070620">
-<node TEXT="" ID="ID_272943568" CREATED="1462313073206" MODIFIED="1462313100522">
-<icon BUILTIN="yes"/>
-<attribute NAME="When" VALUE="12/5/16 10:00 AM" OBJECT="org.freeplane.features.format.FormattedDate|2016-12-05T10:00-0200|datetime"/>
-</node>
-</node>
 <node TEXT="Report" ID="ID_1753839749" CREATED="1462313283027" MODIFIED="1462313284423">
-<node TEXT="Insert Rik important notes" ID="ID_1331863585" CREATED="1460681553882" MODIFIED="1462313100488">
+<node TEXT="Insert Rik important notes" ID="ID_1331863585" CREATED="1460681553882" MODIFIED="1462323292181">
 <icon BUILTIN="yes"/>
 <attribute NAME="Where" VALUE="PC,MM"/>
 </node>
+<node TEXT="Put use cases" ID="ID_1931301608" CREATED="1462313373556" MODIFIED="1462313380720"/>
+</node>
+<node TEXT="Meetings" ID="ID_42748413" CREATED="1462313067917" MODIFIED="1462313070620">
+<node TEXT="" ID="ID_272943568" CREATED="1462313073206" MODIFIED="1462323292184">
+<icon BUILTIN="yes"/>
+<attribute NAME="When" VALUE="12/5/16 10:00 AM" OBJECT="org.freeplane.features.format.FormattedDate|2016-12-05T10:00-0200|datetime"/>
+<hook NAME="plugins/TimeManagementReminder.xml">
+    <Parameters REMINDUSERAT="1463100720000" PERIOD="1" UNIT="DAY"/>
+</hook>
+<node TEXT="Review Software Engineering" ID="ID_1117876727" CREATED="1462323274627" MODIFIED="1462323292185">
+<icon BUILTIN="yes"/>
+<node TEXT="(Non)Functional requisites" ID="ID_838381054" CREATED="1462321813870" MODIFIED="1462323204731">
+<hook NAME="FirstGroupNode"/>
+<node TEXT="Explain your decisions with Arduino + components" ID="ID_129815361" CREATED="1462321892560" MODIFIED="1462321913316"/>
+</node>
+<node TEXT="Use case description" ID="ID_1602127508" CREATED="1462321795478" MODIFIED="1462321957797">
+<arrowlink SHAPE="CUBIC_CURVE" COLOR="#000000" WIDTH="2" TRANSPARENCY="80" FONT_SIZE="9" FONT_FAMILY="SansSerif" DESTINATION="ID_129815361" STARTINCLINATION="240;0;" ENDINCLINATION="7;106;" STARTARROW="NONE" ENDARROW="DEFAULT"/>
 </node>
 </node>
-<node TEXT="Review" LOCALIZED_STYLE_REF="AutomaticLayout.level,1" POSITION="right" ID="ID_117855996" CREATED="1427225917881" MODIFIED="1453649693945">
+<node TEXT="FSM Representation: All states" ID="ID_351521467" CREATED="1462321767877" MODIFIED="1462323406843" VSHIFT="80">
+<arrowlink SHAPE="CUBIC_CURVE" COLOR="#000000" WIDTH="2" TRANSPARENCY="80" FONT_SIZE="9" FONT_FAMILY="SansSerif" DESTINATION="ID_400687816" STARTINCLINATION="83;-99;" ENDINCLINATION="92;20;" STARTARROW="NONE" ENDARROW="DEFAULT"/>
+<node TEXT="Cycle time control" ID="ID_9316145" CREATED="1462322025467" MODIFIED="1462323292186">
+<icon BUILTIN="yes"/>
+</node>
+<node TEXT="pH Stabilization" ID="ID_439183212" CREATED="1462322037530" MODIFIED="1462323292187">
+<icon BUILTIN="yes"/>
+</node>
+<node TEXT="Drain clogged" ID="ID_1450943989" CREATED="1462322046483" MODIFIED="1462322067263"/>
+<node TEXT="Nitrobacter disequilibrium" ID="ID_1178362105" CREATED="1462322068043" MODIFIED="1462322104616"/>
+<node TEXT="Lack of water" ID="ID_66518741" CREATED="1462322855771" MODIFIED="1462322861215"/>
+<node TEXT="Low water quality" ID="ID_1679331384" CREATED="1462323116824" MODIFIED="1462323120596"/>
+</node>
+<node TEXT="Ideas" ID="ID_1863761961" CREATED="1462322931533" MODIFIED="1462322973073">
+<node TEXT="Esteira de recipientes com motor de passo" ID="ID_1783394654" CREATED="1462322983998" MODIFIED="1462323004906"/>
+<node TEXT="Watch the classes about embedded systems" ID="ID_1556985765" CREATED="1462323162234" MODIFIED="1462323292188">
+<icon BUILTIN="yes"/>
+</node>
+</node>
+<node TEXT="Warnings" ID="ID_623514553" CREATED="1462322965005" MODIFIED="1462322978722">
+<node TEXT="Report is everything" ID="ID_1062203097" CREATED="1462322979693" MODIFIED="1462322983722"/>
+</node>
+</node>
+</node>
+</node>
+<node TEXT="Review" LOCALIZED_STYLE_REF="AutomaticLayout.level,1" POSITION="right" ID="ID_117855996" CREATED="1427225917881" MODIFIED="1462321971519" HGAP="-200" VSHIFT="220">
 <icon BUILTIN="revision"/>
 <edge COLOR="#00ff00"/>
 <richcontent TYPE="DETAILS" HIDDEN="true">
@@ -283,7 +316,7 @@
   </body>
 </html>
 </richcontent>
-<node TEXT="Make a mindmap with paragraphs" ID="ID_575818555" CREATED="1460585648180" MODIFIED="1462229477598">
+<node TEXT="Make a mindmap with paragraphs" ID="ID_575818555" CREATED="1460585648180" MODIFIED="1462323292190">
 <icon BUILTIN="yes"/>
 <icon BUILTIN="button_ok"/>
 <attribute NAME="Where" VALUE="IC"/>
