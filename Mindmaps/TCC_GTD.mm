@@ -231,20 +231,8 @@
   </body>
 </html>
 </richcontent>
-<node TEXT="TCC" ID="ID_1702781550" CREATED="1460585565266" MODIFIED="1460585637213">
-<node TEXT="program" ID="ID_190793938" CREATED="1460585545546" MODIFIED="1462229477587">
-<icon BUILTIN="yes"/>
-<icon BUILTIN="Mail"/>
-<icon BUILTIN="full-1"/>
-<attribute NAME="Where" VALUE="email"/>
-<attribute NAME="Priority" VALUE="1" OBJECT="org.freeplane.features.format.FormattedNumber|1"/>
-</node>
-<node TEXT="Insert Rik important notes" ID="ID_1331863585" CREATED="1460681553882" MODIFIED="1462229477590">
-<icon BUILTIN="yes"/>
-<attribute NAME="Where" VALUE="PC,MM"/>
-</node>
 <node TEXT="FSM" ID="ID_232015446" CREATED="1462213835418" MODIFIED="1462213838964">
-<node TEXT="Create a FSM diagram as an example" ID="ID_400687816" CREATED="1460681446238" MODIFIED="1462229477593">
+<node TEXT="Create a FSM diagram as an example" ID="ID_400687816" CREATED="1460681446238" MODIFIED="1462313100493">
 <icon BUILTIN="yes"/>
 <attribute NAME="Where" VALUE="MM"/>
 </node>
@@ -253,6 +241,17 @@
 </node>
 <node TEXT="Write an Arduino code for it" ID="ID_699262307" CREATED="1462213896152" MODIFIED="1462213905037"/>
 <node TEXT="Integrate Arduino code with 123d circuits" ID="ID_927155640" CREATED="1462213843463" MODIFIED="1462213894916"/>
+</node>
+<node TEXT="Meetings" ID="ID_42748413" CREATED="1462313067917" MODIFIED="1462313070620">
+<node TEXT="" ID="ID_272943568" CREATED="1462313073206" MODIFIED="1462313100522">
+<icon BUILTIN="yes"/>
+<attribute NAME="When" VALUE="12/5/16 10:00 AM" OBJECT="org.freeplane.features.format.FormattedDate|2016-12-05T10:00-0200|datetime"/>
+</node>
+</node>
+<node TEXT="Report" ID="ID_1753839749" CREATED="1462313283027" MODIFIED="1462313284423">
+<node TEXT="Insert Rik important notes" ID="ID_1331863585" CREATED="1460681553882" MODIFIED="1462313100488">
+<icon BUILTIN="yes"/>
+<attribute NAME="Where" VALUE="PC,MM"/>
 </node>
 </node>
 </node>
