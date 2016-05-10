@@ -53,7 +53,7 @@
 </stylenode>
 </map_styles>
 </hook>
-<hook NAME="AutomaticEdgeColor" COUNTER="8"/>
+<hook NAME="AutomaticEdgeColor" COUNTER="9"/>
 <richcontent TYPE="DETAILS">
 
 <html>
@@ -90,7 +90,7 @@
 </html>
 </richcontent>
 </node>
-<node TEXT="Archive" LOCALIZED_STYLE_REF="AutomaticLayout.level,1" POSITION="left" ID="ID_1068479685" CREATED="1427225933330" MODIFIED="1453649700929">
+<node TEXT="Archives" LOCALIZED_STYLE_REF="AutomaticLayout.level,1" POSITION="left" ID="ID_1068479685" CREATED="1427225933330" MODIFIED="1462761331832">
 <icon BUILTIN="folder"/>
 <edge COLOR="#00ffff"/>
 <richcontent TYPE="DETAILS" HIDDEN="true">
@@ -118,6 +118,11 @@
   </body>
 </html>
 </richcontent>
+<node TEXT="Watch the classes about embedded systems" ID="ID_1556985765" CREATED="1462323162234" MODIFIED="1462761348992">
+<icon BUILTIN="yes"/>
+<icon BUILTIN="button_ok"/>
+<attribute NAME="Where" VALUE="Studying"/>
+</node>
 </node>
 <node TEXT="Config" LOCALIZED_STYLE_REF="styles.topic" POSITION="left" ID="ID_867421423" CREATED="1427226495651" MODIFIED="1453650055976">
 <edge COLOR="#7c0000"/>
@@ -229,32 +234,34 @@
 </html>
 </richcontent>
 <node TEXT="FSM" ID="ID_232015446" CREATED="1462213835418" MODIFIED="1462213838964">
-<node TEXT="Create a FSM diagram as an example" ID="ID_400687816" CREATED="1460681446238" MODIFIED="1462323292174">
+<node TEXT="Create a FSM diagram as an example" ID="ID_400687816" CREATED="1460681446238" MODIFIED="1462761297338">
 <icon BUILTIN="yes"/>
 <attribute NAME="Where" VALUE="MM"/>
 </node>
-<node TEXT="Compare FSM libs" ID="ID_933684092" CREATED="1462229465843" MODIFIED="1462229477595">
+<node TEXT="Compare FSM libs" ID="ID_933684092" CREATED="1462229465843" MODIFIED="1462761297339">
 <icon BUILTIN="yes"/>
+<attribute NAME="Where" VALUE="Programming"/>
 </node>
 <node TEXT="Write an Arduino code for it" ID="ID_699262307" CREATED="1462213896152" MODIFIED="1462213905037"/>
 <node TEXT="Integrate Arduino code with 123d circuits" ID="ID_927155640" CREATED="1462213843463" MODIFIED="1462213894916"/>
 </node>
 <node TEXT="Report" ID="ID_1753839749" CREATED="1462313283027" MODIFIED="1462313284423">
-<node TEXT="Insert Rik important notes" ID="ID_1331863585" CREATED="1460681553882" MODIFIED="1462323292181">
+<node TEXT="Insert Rik important notes" ID="ID_1331863585" CREATED="1460681553882" MODIFIED="1462720853307">
 <icon BUILTIN="yes"/>
 <attribute NAME="Where" VALUE="PC,MM"/>
 </node>
 <node TEXT="Put use cases" ID="ID_1931301608" CREATED="1462313373556" MODIFIED="1462313380720"/>
 </node>
 <node TEXT="Meetings" ID="ID_42748413" CREATED="1462313067917" MODIFIED="1462313070620">
-<node TEXT="" ID="ID_272943568" CREATED="1462313073206" MODIFIED="1462323292184">
+<node TEXT="" ID="ID_272943568" CREATED="1462313073206" MODIFIED="1462761297340">
 <icon BUILTIN="yes"/>
 <attribute NAME="When" VALUE="12/5/16 10:00 AM" OBJECT="org.freeplane.features.format.FormattedDate|2016-12-05T10:00-0200|datetime"/>
 <hook NAME="plugins/TimeManagementReminder.xml">
     <Parameters REMINDUSERAT="1463100720000" PERIOD="1" UNIT="DAY"/>
 </hook>
-<node TEXT="Review Software Engineering" ID="ID_1117876727" CREATED="1462323274627" MODIFIED="1462323292185">
+<node TEXT="Review Software Engineering" ID="ID_1117876727" CREATED="1462323274627" MODIFIED="1462761297341">
 <icon BUILTIN="yes"/>
+<attribute NAME="Where" VALUE="Studying"/>
 <node TEXT="(Non)Functional requisites" ID="ID_838381054" CREATED="1462321813870" MODIFIED="1462323204731">
 <hook NAME="FirstGroupNode"/>
 <node TEXT="Explain your decisions with Arduino + components" ID="ID_129815361" CREATED="1462321892560" MODIFIED="1462321913316"/>
@@ -278,8 +285,13 @@
 </node>
 <node TEXT="Ideas" ID="ID_1863761961" CREATED="1462322931533" MODIFIED="1462322973073">
 <node TEXT="Esteira de recipientes com motor de passo" ID="ID_1783394654" CREATED="1462322983998" MODIFIED="1462323004906"/>
-<node TEXT="Watch the classes about embedded systems" ID="ID_1556985765" CREATED="1462323162234" MODIFIED="1462323292188">
+<node TEXT="Watch/read classes about scientific writing" ID="ID_1556446268" CREATED="1462721047226" MODIFIED="1462761297348">
 <icon BUILTIN="yes"/>
+<attribute NAME="Where" VALUE="Studying"/>
+</node>
+<node TEXT="Watch/read Christian&apos;s classes about Software Engineering" ID="ID_307056209" CREATED="1462720993324" MODIFIED="1462761297350">
+<icon BUILTIN="yes"/>
+<attribute NAME="Where" VALUE="Studying"/>
 </node>
 </node>
 <node TEXT="Warnings" ID="ID_623514553" CREATED="1462322965005" MODIFIED="1462322978722">
@@ -316,11 +328,6 @@
   </body>
 </html>
 </richcontent>
-<node TEXT="Make a mindmap with paragraphs" ID="ID_575818555" CREATED="1460585648180" MODIFIED="1462323292190">
-<icon BUILTIN="yes"/>
-<icon BUILTIN="button_ok"/>
-<attribute NAME="Where" VALUE="IC"/>
-</node>
 </node>
 </node>
 </map>
