@@ -118,7 +118,7 @@
   </body>
 </html>
 </richcontent>
-<node TEXT="Watch the classes about embedded systems" ID="ID_1556985765" CREATED="1462323162234" MODIFIED="1462761348992">
+<node TEXT="Watch the classes about embedded systems" ID="ID_1556985765" CREATED="1462323162234" MODIFIED="1463253064982">
 <icon BUILTIN="yes"/>
 <icon BUILTIN="button_ok"/>
 <attribute NAME="Where" VALUE="Studying"/>
@@ -234,11 +234,11 @@
 </html>
 </richcontent>
 <node TEXT="FSM" ID="ID_232015446" CREATED="1462213835418" MODIFIED="1462213838964">
-<node TEXT="Create a FSM diagram as an example" ID="ID_400687816" CREATED="1460681446238" MODIFIED="1462761297338">
+<node TEXT="Create a FSM diagram as an example" ID="ID_400687816" CREATED="1460681446238" MODIFIED="1463253064991">
 <icon BUILTIN="yes"/>
 <attribute NAME="Where" VALUE="MM"/>
 </node>
-<node TEXT="Compare FSM libs" ID="ID_933684092" CREATED="1462229465843" MODIFIED="1462761297339">
+<node TEXT="Compare FSM libs" ID="ID_933684092" CREATED="1462229465843" MODIFIED="1463253064994">
 <icon BUILTIN="yes"/>
 <attribute NAME="Where" VALUE="Programming"/>
 </node>
@@ -252,14 +252,17 @@
 </node>
 <node TEXT="Put use cases" ID="ID_1931301608" CREATED="1462313373556" MODIFIED="1462313380720"/>
 </node>
-<node TEXT="Meetings" ID="ID_42748413" CREATED="1462313067917" MODIFIED="1462313070620">
-<node TEXT="" ID="ID_272943568" CREATED="1462313073206" MODIFIED="1462761297340">
+<node TEXT="Meetings" ID="ID_42748413" CREATED="1462313067917" MODIFIED="1463253043032">
+<hook NAME="plugins/TimeManagementReminder.xml">
+    <Parameters REMINDUSERAT="1463685000000" PERIOD="1" UNIT="DAY"/>
+</hook>
+<node TEXT="" ID="ID_272943568" CREATED="1462313073206" MODIFIED="1463253065000">
 <icon BUILTIN="yes"/>
 <attribute NAME="When" VALUE="12/5/16 10:00 AM" OBJECT="org.freeplane.features.format.FormattedDate|2016-12-05T10:00-0200|datetime"/>
 <hook NAME="plugins/TimeManagementReminder.xml">
     <Parameters REMINDUSERAT="1463100720000" PERIOD="1" UNIT="DAY"/>
 </hook>
-<node TEXT="Review Software Engineering" ID="ID_1117876727" CREATED="1462323274627" MODIFIED="1462761297341">
+<node TEXT="Review Software Engineering" ID="ID_1117876727" CREATED="1462323274627" MODIFIED="1463253065003">
 <icon BUILTIN="yes"/>
 <attribute NAME="Where" VALUE="Studying"/>
 <node TEXT="(Non)Functional requisites" ID="ID_838381054" CREATED="1462321813870" MODIFIED="1462323204731">
@@ -270,32 +273,45 @@
 <arrowlink SHAPE="CUBIC_CURVE" COLOR="#000000" WIDTH="2" TRANSPARENCY="80" FONT_SIZE="9" FONT_FAMILY="SansSerif" DESTINATION="ID_129815361" STARTINCLINATION="240;0;" ENDINCLINATION="7;106;" STARTARROW="NONE" ENDARROW="DEFAULT"/>
 </node>
 </node>
-<node TEXT="FSM Representation: All states" ID="ID_351521467" CREATED="1462321767877" MODIFIED="1462323406843" VSHIFT="80">
-<arrowlink SHAPE="CUBIC_CURVE" COLOR="#000000" WIDTH="2" TRANSPARENCY="80" FONT_SIZE="9" FONT_FAMILY="SansSerif" DESTINATION="ID_400687816" STARTINCLINATION="83;-99;" ENDINCLINATION="92;20;" STARTARROW="NONE" ENDARROW="DEFAULT"/>
-<node TEXT="Cycle time control" ID="ID_9316145" CREATED="1462322025467" MODIFIED="1462323292186">
-<icon BUILTIN="yes"/>
-</node>
-<node TEXT="pH Stabilization" ID="ID_439183212" CREATED="1462322037530" MODIFIED="1462323292187">
-<icon BUILTIN="yes"/>
-</node>
-<node TEXT="Drain clogged" ID="ID_1450943989" CREATED="1462322046483" MODIFIED="1462322067263"/>
-<node TEXT="Nitrobacter disequilibrium" ID="ID_1178362105" CREATED="1462322068043" MODIFIED="1462322104616"/>
-<node TEXT="Lack of water" ID="ID_66518741" CREATED="1462322855771" MODIFIED="1462322861215"/>
-<node TEXT="Low water quality" ID="ID_1679331384" CREATED="1462323116824" MODIFIED="1462323120596"/>
-</node>
 <node TEXT="Ideas" ID="ID_1863761961" CREATED="1462322931533" MODIFIED="1462322973073">
 <node TEXT="Esteira de recipientes com motor de passo" ID="ID_1783394654" CREATED="1462322983998" MODIFIED="1462323004906"/>
-<node TEXT="Watch/read classes about scientific writing" ID="ID_1556446268" CREATED="1462721047226" MODIFIED="1462761297348">
+<node TEXT="Watch/read classes about scientific writing" ID="ID_1556446268" CREATED="1462721047226" MODIFIED="1463253065014">
 <icon BUILTIN="yes"/>
 <attribute NAME="Where" VALUE="Studying"/>
 </node>
-<node TEXT="Watch/read Christian&apos;s classes about Software Engineering" ID="ID_307056209" CREATED="1462720993324" MODIFIED="1462761297350">
+<node TEXT="Watch/read Christian&apos;s classes about Software Engineering" ID="ID_307056209" CREATED="1462720993324" MODIFIED="1463253065018">
 <icon BUILTIN="yes"/>
 <attribute NAME="Where" VALUE="Studying"/>
 </node>
 </node>
 <node TEXT="Warnings" ID="ID_623514553" CREATED="1462322965005" MODIFIED="1462322978722">
 <node TEXT="Report is everything" ID="ID_1062203097" CREATED="1462322979693" MODIFIED="1462322983722"/>
+</node>
+</node>
+<node TEXT="* Last Meeting on May" ID="ID_1689702088" CREATED="1463253129281" MODIFIED="1463253244090">
+<node TEXT="Simple Objetive" ID="ID_1786375458" CREATED="1463253247823" MODIFIED="1463253261325">
+<node TEXT="Make a V-model interation" ID="ID_1351572583" CREATED="1463253263337" MODIFIED="1463253322676"><richcontent TYPE="DETAILS">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      It is related in the approach section
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
+</node>
+<node TEXT="Warnings" ID="ID_296935021" CREATED="1463253348013" MODIFIED="1463253350669">
+<node TEXT="The requirements are the product of the use case study" ID="ID_125687249" CREATED="1463253351840" MODIFIED="1463253362245"/>
+<node TEXT="The diagrams and the FSM are part of the system&apos;s architecture" ID="ID_1742458117" CREATED="1463253368829" MODIFIED="1463253386917"/>
+<node TEXT="One must generalize the concept of microcontroller, instead of calling it as Arduino, for example" ID="ID_1055758029" CREATED="1463253391455" MODIFIED="1463253438315">
+<node TEXT="The specialization can be done afterwards" ID="ID_44420273" CREATED="1463254214596" MODIFIED="1463254224995"/>
+</node>
 </node>
 </node>
 </node>
@@ -328,6 +344,21 @@
   </body>
 </html>
 </richcontent>
+<node TEXT="FSM Representation: All states" ID="ID_351521467" CREATED="1462321767877" MODIFIED="1463253088646" VSHIFT="80">
+<icon BUILTIN="yes"/>
+<icon BUILTIN="button_ok"/>
+<arrowlink SHAPE="CUBIC_CURVE" COLOR="#000000" WIDTH="2" TRANSPARENCY="80" FONT_SIZE="9" FONT_FAMILY="SansSerif" DESTINATION="ID_400687816" STARTINCLINATION="83;-99;" ENDINCLINATION="92;20;" STARTARROW="NONE" ENDARROW="DEFAULT"/>
+<node TEXT="Cycle time control" ID="ID_9316145" CREATED="1462322025467" MODIFIED="1462323292186">
+<icon BUILTIN="yes"/>
+</node>
+<node TEXT="pH Stabilization" ID="ID_439183212" CREATED="1462322037530" MODIFIED="1462323292187">
+<icon BUILTIN="yes"/>
+</node>
+<node TEXT="Drain clogged" ID="ID_1450943989" CREATED="1462322046483" MODIFIED="1462322067263"/>
+<node TEXT="Nitrobacter disequilibrium" ID="ID_1178362105" CREATED="1462322068043" MODIFIED="1462322104616"/>
+<node TEXT="Lack of water" ID="ID_66518741" CREATED="1462322855771" MODIFIED="1462322861215"/>
+<node TEXT="Low water quality" ID="ID_1679331384" CREATED="1462323116824" MODIFIED="1462323120596"/>
+</node>
 </node>
 </node>
 </map>

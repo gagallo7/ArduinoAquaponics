@@ -1,9 +1,11 @@
-\documentclass[11pt,a4paper]{article}
+\documentclass[10pt,a4paper]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[english]{babel}
 
 \usepackage{csquotes}
 \usepackage{hyperref}
+
+\usepackage{sty/usecases}
 
 \usepackage[
 backend=biber,
@@ -19,6 +21,33 @@ citestyle=authoryear
 \begin{document}
 
 \maketitle
+
+\newpage
+
+\section{Introduction}
+\label{sec:introduction}
+\input{introduction}
+
+\section{Objectives}
+% Problem characterization and goals
+\label{objectives}
+\input{objectives}
+
+\section{Theoretical Fundamentals}
+\label{fundamentals}
+\input{fundamentals}
+
+\section{System Proposal}
+\label{proposal}
+\input{proposal}
+
+\section{Conclusion}
+\label{conclusion}
+\input{conclusion}
+
+\section{Future Work}
+\label{future}
+\input{future}
 
 \section{State of Art}
 \label{sec:state_of_art}
