@@ -4,6 +4,7 @@
 
 \usepackage{csquotes}
 \usepackage{hyperref}
+\usepackage{graphicx}
 
 \usepackage{sty/usecases}
 
@@ -15,8 +16,16 @@ citestyle=authoryear
 
 \addbibresource{jabref.bib}
 
-\title{Automatized Aquaponics with Arduino}
+\title{Armoniacs: Automatized Aquaponics with Arduino}
 \author{Guilherme Alcarde Gallo \and Christian Esteve Rothenberg \and Edmundo Roberto Mauro Madeira}
+
+% define \req command to label requirements in description environment
+\makeatletter
+\newcommand{\req}[1]{
+  \def\@currentlabel{R#1}\label{req#1}
+  \textbf{R#1}
+}
+\makeatother
 
 \begin{document}
 
@@ -49,20 +58,22 @@ citestyle=authoryear
 \label{future}
 \input{future}
 
-\section{State of Art}
-\label{sec:state_of_art}
+% \section{State of Art}
+% \label{sec:state_of_art}
 
-\input{inspiration}
+% \input{inspiration}
 
-\section{Required Components}
-\label{sec:required_components}
+% \section{Required Components}
+% \label{sec:required_components}
 
-\input{components}
+% \input{components}
 
-\section{Proof of Concept}
-\label{sec:proof_of_concept}
+% \section{Proof of Concept}
+% \label{sec:proof_of_concept}
 
-\input{poc}
+%% \input{poc}
 
+\nocite{useCaseStyle}
+%\printbibliography
 
 \end{document}

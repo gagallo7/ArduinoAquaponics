@@ -16,17 +16,19 @@
 \addfield{Actors:}{Microcontroller}
 
 %Stakeholders and Interests: Who cares about this use case and what do they want?
-\additemizedfield{Stakeholders and Interests:}{
-	\item Stakeholder 1 name: his interests
-	\item Stakeholder 2 name: his interests
-}
+%\additemizedfield{Stakeholders and Interests:}{
+	%\item Stakeholder 1 name: his interests
+	%\item Stakeholder 2 name: his interests
+%}
 
 %Preconditions: What must be true on start and worth telling the reader?
 %\addfield{Preconditions:}{}
 %when multiple
 \additemizedfield{Preconditions:}{
     \item The Microcontroller must be installed in the system
-    \item Water pump and the PWM module are working normally
+    \item A proper relay must be installed in the system
+    \item The external power supply and the water pump must be compatible
+    %\item Water pump and the PWM module are working normally
 } 
 
 %Postconditions: What must be true on successful completion and worth telling the reader
@@ -39,7 +41,8 @@
 
 %Main Success Scenario: A typical, unconditional happy path scenario of success.
 \addscenario{Main Success Scenario:}{
-	\item The Microcontroller executes a run cycle of 25\% in the PWM in a 1 hour period.
+	\item The Microcontroller executes a run cycle of 25\% in a 1 hour period.
+	%\item The Microcontroller executes a run cycle of 25\% in the PWM in a 1 hour period.
 	\item The circuit sends this signal to a relay.
     \item The relay activates the water pump at a 15 minutes per hour rate with the adequate voltage.
 }
@@ -60,8 +63,8 @@
 
 %Special Requirements: Related non-functional requirements.
 \additemizedfield{Special Requirements:}{
-	\item R1: Operation Time Limit requirement
-	\item second applicable non-functional requirement
+	%\item R1: Operation Time Limit requirement
+	\item \ref{req1}
 }
 
 % TODO: COOL Technology and Data Variations List: Varying I/O methods and data formats.
