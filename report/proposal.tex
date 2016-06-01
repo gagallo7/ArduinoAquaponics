@@ -1,19 +1,54 @@
 % V-model
 \subsection{Approach}
-This work has been implemented with an adaptation of V-model development process.
+This work has been implemented with an adaptation of V-model development process
+\footnote{Described in detail here: \cite{mathur2010advancements}}.
 The original version of this process is known as a variation of the waterfall process,
-with several phases dividing the beginning from the scratch and the final product,
-but there is more emphasis on the coding phase.
+with several phases that resembles the latter,
+but the their displacement is slightly modified,
+emphasising on the coding phase.
 
 A great feature of V-model is that every phase,
 before the coding one,
 has a 1:1 strong relationship with the phases that occurs after the coding,
 reinforcing the mapping of the theoretical part of the project with the practical one.
+Moreover,
+in comparison with Agile models,
+there is much more documentation with V-model,
+and this feature is crucial for this work.
 
 The adaptation made in this project was to divide the V-model into iterations separated by the use cases.
+That is,
+for every use case,
+there are the execution of every phase of V-model,
+as if the product would have only one use case.
+
+Curiously,
+after some research about the flaws of V-model,
+a variation of the V-model has been found and it shares the fundamental difference between this work's approach and V-model:
+the Dual V-model \cite{clark2009system}.
+The shared idea is: divide and conquer V-model, 
+by making subsystems that follows V-model,
+so,
+when these subsystems are finished,
+they can be integrated to create the final product.
+
+\subsubsection{How it works}
+
+\subsubsection{Mapping V-model to this work}
+\begin{description}
+    \item[Requirements Analysis] Sections \ref{sec:useCases} and \ref{sec:requirements}
+    \item[Specification / System Design] Section \ref{sec:design}
+    \item[Architectural Design / System Architecture] Section  \ref{sec:architecture}
+    \item[Detail Design / Module Design] Section \ref{implementation}
+    \item[Unit Testing] 
+    \item[Integration Testing] 
+    \item[System Testing] 
+    \item[User Acceptance Testing] Not used, because we are building a proof of concept.
+\end{description}
 
 
 \subsection{Use Cases}
+\label{sec:useCases}
 \input{useCases/waterCycleControl}
 
 \subsubsection{Summary table}
@@ -30,6 +65,7 @@ Optimize Water Cycle & \ref{req1}           &                 \\ \hline
 \end{table}
 
 \subsection{Requirements}
+\label{sec:requirements}
 
 \begin{description}
 
@@ -39,24 +75,59 @@ Optimize the water cycle period between fish tank and plants medium.
 \end{description}
 
 \subsection{System Design}
+\label{sec:design}
+
+The figure \ref{fig:highLevelSystemDesign} shows a high level diagram to demonstrate how the automation can be implemented in the Aquaponics.
+Each node has an input and output,
+indicated by an incoming and outgoing arrows, respectfully.
+
+The components are from the original Aquaponics system,
+which are surveyed by the sensors.
+The latter captures dedicated data from the medium,
+like temperature or water level and emits an electronic signal to the microcontroller.
+
+The latter is the main responsible for the automation,
+it is where the logic is stored,
+so the input signal are interpreted by the installed program and another electronic signal is sent to the components,
+this signal could be directed or indirect,
+the former is when the output current is enough to the target component to work,
+otherwise the latter is used via a relay,
+that is connected with an external power supply,
+and behaves as an signal amplifier.
 
 \begin{figure}[h]
     \centering
-    \includegraphics[width=.8\linewidth]{diagrams/systemDesign}
+    \includegraphics[width=.7\linewidth]{diagrams/systemDesign}
     \caption{A simple diagram to represent a high level design of this project}
     \label{fig:highLevelSystemDesign}
 \end{figure}
 
 \subsection{System Architecture}
+\label{sec:architecture}
+
+At the figure \ref{sec:architecture} the low-level design is illustrated.
+Based on the figure \ref{fig:highLevelSystemDesign},
+the figure \ref{fig:waterCycleDiagram} depicts a model to automatize the water cycle control from the requirement \ref{req1}.
+Now one can see where to connect each terminal and every important component is presented.
 
 \begin{figure}[h]
     \centering
-    \includegraphics[width=.8\linewidth]{diagrams/architecture_bb}
+    \includegraphics[width=.6\linewidth]{diagrams/architecture_bb}
     \caption{This diagram shows how the microcontroller interacts with the water pump}
     \label{fig:waterCycleDiagram}
 \end{figure}
 
-\subsection{Prototype Implementation and Project Decisions}
+Each wire color has a meaning.
+Blue represents the ground voltage,
+red is high voltage
+and yellow is low voltage.
+The submersible water pump is located inside the fish tank and normally is turned off.
+When the periodic signal comes from the microcontroller's digital output,
+it is amplified by the relay switching,
+which in turn makes the power supply to deliver high voltage to the water pump,
+the latter works until the relay is switched again by the microcontroller's signal downtime.
+
+\subsection{Project Decisions}
 There are a lot of authors that have had experience with Aquaponics automation.
 Most of them chooses Arduino or Raspberry Pi as the main microcontroller.
 
@@ -68,8 +139,3 @@ the \cite{Kretzinger2015},
 whose author has many years of experience with Aquaponics and its automation and he uses the Arduino as microcontroller.
 
 The chosen components have been based in the references.
-
-% Evaluation
-% Related with the requirements:
-% Test 1: R1: pH Control: change constant's value and verify control work
-\subsection{Results and Evaluation}

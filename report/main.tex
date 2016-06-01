@@ -1,3 +1,6 @@
+% TODO fix citation style
+% TODO make printbibliography work
+
 \documentclass[10pt,a4paper]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[english]{babel}
@@ -7,6 +10,7 @@
 \usepackage{graphicx}
 
 \usepackage{sty/usecases}
+\usepackage{sty/arduinoListing}
 
 \usepackage[
 backend=biber,
@@ -33,6 +37,10 @@ citestyle=authoryear
 
 \newpage
 
+\tableofcontents
+
+\newpage
+
 \section{Introduction}
 \label{sec:introduction}
 \input{introduction}
@@ -49,6 +57,17 @@ citestyle=authoryear
 \section{System Proposal}
 \label{proposal}
 \input{proposal}
+
+\section{Implementation}
+\label{implementation}
+\input{implementation}
+
+% Evaluation
+% Related with the requirements:
+% Test 1: R1: pH Control: change constant's value and verify control work
+\section{Results and Evaluation}
+\label{evaluation}
+\input{evaluation}
 
 \section{Conclusion}
 \label{conclusion}
