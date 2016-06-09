@@ -1,0 +1,96 @@
+%Sometimes it is a good idea to put domain objects in \texttt{}
+%The template and the descriptions are based on the book Applying UML and Patterns: 
+%An Introduction to Object-Oriented Analysis and Design and Iterative Development
+%(3rd Edition) by Craig Larman.
+\begin{usecase}
+
+\addtitle{Keep water tank's pH level in 6-7 range}{Details} 
+
+%Scope: the system under design
+%\addfield{Scope:}{System-wide}
+
+%Level: "user-goal" or "subfunction"
+%\addfield{Level:}{User-goal}
+
+%Primary Actor: Calls on the system to deliver its services.
+\additemizedfield{Actors:}
+{
+\item Microcontroller
+\item Peristaltic Water Pumps 
+\item pH Sensors
+}
+
+%Stakeholders and Interests: Who cares about this use case and what do they want?
+%\additemizedfield{Stakeholders and Interests:}{
+	%\item Stakeholder 1 name: his interests
+	%\item Stakeholder 2 name: his interests
+%}
+
+%Preconditions: What must be true on start and worth telling the reader?
+%\addfield{Preconditions:}{}
+%when multiple
+\additemizedfield{Preconditions:}{
+    \item The Microcontroller, pH sensors and the peristaltic pumps must be installed in the system
+    \item A proper relay must be installed in the system
+         OR a power transistor to supply 12V DC
+    \item The external power supply and the water pump must be compatible
+} 
+
+%Postconditions: What must be true on successful completion and worth telling the reader
+\addfield{Postconditions:}
+{
+    The water tank's pH level is between 6 and 7.
+}
+%when multiple
+%\additemizedfield{Preconditions:}{}
+
+%Main Success Scenario: A typical, unconditional happy path scenario of success.
+\addscenario{Main Success Scenario:}{
+	\item The Microcontroller checks the pH sensor.
+    \item The pH output is between 6 and 7.
+	%\item The Microcontroller executes a run cycle of 25\% in the PWM in a 1 hour period.
+}
+
+%Extensions: Alternate scenarios of success or failure.
+\addscenario{Extensions:}{
+	\item[2.a] Lower pH values in output:
+		\begin{enumerate}
+            \item[1.] The circuit sends this signal to start the high pH relay.
+            \item[2.] The relay distributes the needed current to the high pH's peristaltic pump.
+            \item[3.] High pH water is blended with the water tank's, until the latter gets into the normal pH range.
+            \item[1.] The circuit sends this signal to stop the high pH relay.
+		%\item[2.] User returns to step 1
+		\end{enumerate}
+	\item[2.a] Higher pH values in output:
+		\begin{enumerate}
+            \item[1.] The circuit sends this signal to start the low pH relay.
+            \item[2.] The relay distributes the needed current to the low pH's peristaltic pump.
+            \item[3.] High pH water is blended with the water tank's, until the latter gets into the normal pH range.
+            \item[1.] The circuit sends this signal to stop the low pH relay.
+		%\item[2.] User returns to step 1
+		\end{enumerate}
+	%\item[5.a] Invalid subsriber data:
+		%\begin{enumerate}
+		%\item[1.] System shows failure message
+		%\item[2.] User returns to step 2 and corrects the errors
+		%\end{enumerate}
+}
+
+%Special Requirements: Related non-functional requirements.
+\additemizedfield{Special Requirements:}{
+	%\item R1: Operation Time Limit requirement
+	\item \ref{req2}
+}
+
+% TODO: COOL Technology and Data Variations List: Varying I/O methods and data formats.
+%\addscenario{Technology and Data Variations List:}{
+	%\item[1a.] Alternative first action with other technology
+%}
+
+%Frequency of Occurrence: Influences investigation, testing and timing of implementation.
+%\addfield{Frequency of Occurrence:}{}
+
+%Miscellaneous: Such as open issues/questions
+%\addfield{Open Issues:}{}
+
+\end{usecase}

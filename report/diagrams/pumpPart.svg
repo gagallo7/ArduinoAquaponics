@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Fritzing (http://www.fritzing.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.2"
+   x="0in"
+   y="0in"
+   width="0.260022in"
+   height="0.27586in"
+   viewBox="0 0 18.7216 19.8619"
+   id="svg4233"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="pumpPart.svg">
+  <metadata
+     id="metadata4257">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs4255" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1009"
+     id="namedview4253"
+     showgrid="false"
+     inkscape:zoom="32.222463"
+     inkscape:cx="11.700991"
+     inkscape:cy="12.413701"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g4235" />
+  <g
+     partID="854105300"
+     id="g4235">
+    <g
+       gorn="0.1"
+       id="breadboard">
+      <rect
+         height="17.4073"
+         y="0"
+         gorn="0.1.0"
+         id="upper"
+         width="18.7216"
+         x="0"
+         stroke-width="0"
+         fill="#000000" />
+      <rect
+         height="2.22912"
+         y="15.93931"
+         gorn="0.1.1"
+         id="lower"
+         width="18.7216"
+         x="0"
+         style="fill:#404040;stroke-width:0" />
+      <text
+         y="9.9483576"
+         gorn="0.1.2"
+         font-size="5.256"
+         id="label"
+         x="2.2903507"
+         style="font-size:5.25600405px;font-family:'Droid Sans';text-anchor:start;fill:#e6e6e6;stroke:none;-inkscape-font-specification:'Droid Sans, Bold';font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal;text-align:start;writing-mode:lr;line-height:125%;"
+         sodipodi:linespacing="125%">Pump</text>
+      <g
+         stroke="none"
+         fill="#8C8C8C"
+         stroke-width="0"
+         height="1.44"
+         y="18.4219"
+         gorn="0.1.5"
+         id="connector0terminal"
+         width="1.656"
+         x="1.3464" />
+      <rect
+         height="3.06"
+         y="16.8019"
+         gorn="0.1.6"
+         id="connector1pin"
+         width="1.656"
+         x="1.3464"
+         stroke-width="0"
+         stroke="none"
+         fill="#8C8C8C" />
+      <rect
+         stroke="none"
+         fill="#8C8C8C"
+         stroke-width="0"
+         height="1.44"
+         y="18.4219"
+         gorn="0.1.9"
+         id="connector2terminal"
+         width="1.656"
+         x="15.7464" />
+      <rect
+         stroke="none"
+         fill="#8C8C8C"
+         stroke-width="0"
+         height="3.06"
+         y="16.8019"
+         gorn="0.1.10"
+         id="connector2pin"
+         width="1.656"
+         x="15.7464" />
+    </g>
+  </g>
+</svg>

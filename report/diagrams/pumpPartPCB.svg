@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Fritzing (http://www.fritzing.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.2"
+   x="0in"
+   y="0in"
+   width="0.14in"
+   height="0.34in"
+   viewBox="0 0 10.08 24.48"
+   id="svg4352"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="pumpPartPCB.svg">
+  <metadata
+     id="metadata4391">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs4389" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1009"
+     id="namedview4387"
+     showgrid="false"
+     inkscape:zoom="30.849673"
+     inkscape:cx="5.9655761"
+     inkscape:cy="17.470349"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg4352" />
+  <g
+     partID="854105480"
+     id="g4354">
+    <g
+       gorn="0.2.0"
+       id="copper0">
+      <rect
+         fill="none"
+         stroke="rgb(255, 191, 0)"
+         stroke-width="1.44"
+         height="4.176"
+         y="2.952"
+         gorn="0.2.0.0"
+         id="square"
+         width="4.176"
+         x="2.952" />
+      <circle
+         fill="none"
+         stroke="rgb(255, 191, 0)"
+         stroke-width="1.44"
+         gorn="0.2.0.1"
+         cx="5.04"
+         id="connector0pin"
+         cy="5.04"
+         r="2.088" />
+      <circle
+         fill="none"
+         stroke="rgb(255, 191, 0)"
+         stroke-width="1.44"
+         gorn="0.2.0.2"
+         cx="5.04"
+         id="connector1pin"
+         cy="12.24"
+         r="2.088" />
+    </g>
+  </g>
+  <g
+     partID="854105482"
+     id="g4361">
+    <g
+       gorn="0.2"
+       id="copper1">
+      <g
+         gorn="0.2.0"
+         id="g4364">
+        <rect
+           fill="none"
+           stroke="rgb(255, 191, 0)"
+           stroke-width="1.44"
+           height="4.176"
+           y="2.952"
+           gorn="0.2.0.0"
+           id="rect4366"
+           width="4.176"
+           x="2.952" />
+        <circle
+           fill="none"
+           stroke="rgb(255, 191, 0)"
+           stroke-width="1.44"
+           gorn="0.2.0.1"
+           cx="5.04"
+           id="circle4368"
+           cy="5.04"
+           r="2.088" />
+        <circle
+           fill="none"
+           stroke="rgb(255, 191, 0)"
+           stroke-width="1.44"
+           gorn="0.2.0.2"
+           cx="5.04"
+           id="circle4370"
+           cy="12.24"
+           r="2.088" />
+      </g>
+    </g>
+  </g>
+  <g
+     partID="854105481"
+     id="g4374">
+    <g
+       gorn="0.1"
+       id="silkscreen">
+      <line
+         stroke="white"
+         y2="23.04"
+         stroke-width="0.72"
+         x2="1.44"
+         x1="1.44"
+         y1="1.44"
+         id="line4377" />
+      <line
+         stroke="white"
+         y2="23.04"
+         stroke-width="0.72"
+         x2="8.64"
+         x1="1.44"
+         y1="23.04"
+         id="line4379" />
+      <line
+         stroke="white"
+         y2="1.44"
+         stroke-width="0.72"
+         x2="8.64"
+         x1="8.64"
+         y1="23.04"
+         id="line4381" />
+      <line
+         stroke="white"
+         y2="1.44"
+         stroke-width="0.72"
+         x2="1.44"
+         x1="8.64"
+         y1="1.44"
+         id="line4383" />
+      <line
+         stroke="white"
+         y2="1.44"
+         stroke-width="0.36"
+         x2="3.96"
+         x1="1.44"
+         y1="3.96"
+         id="line4385" />
+      <!-- 120 -->
+    </g>
+  </g>
+</svg>
