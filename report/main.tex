@@ -1,5 +1,6 @@
 % TODO fix citation style
 % TODO make printbibliography work
+% TODO why aquaponics? Why it is so important?
 
 \documentclass[10pt,a4paper]{article}
 \usepackage[utf8]{inputenc}
@@ -15,14 +16,16 @@
 
 \usepackage[
 backend=biber,
-style=alphabetic,
-citestyle=authoryear 
+%style=alphabetic,
+%citestyle=authoryear 
 ]{biblatex}
 
 \addbibresource{jabref.bib}
 
 \title{Armoniacs: Automatized Aquaponics with Arduino}
-\author{Guilherme Alcarde Gallo \and Christian Esteve Rothenberg \and Edmundo Roberto Mauro Madeira}
+\author{Guilherme Alcarde Gallo \and Christian Esteve Rothenberg 
+%\and Edmundo Roberto Mauro Madeira
+}
 
 % define \req command to label requirements in description environment
 \makeatletter
@@ -94,6 +97,6 @@ citestyle=authoryear
 %% \input{poc}
 
 \nocite{useCaseStyle}
-%\printbibliography
+\printbibliography
 
 \end{document}
