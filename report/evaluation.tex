@@ -95,18 +95,31 @@ the author's camera turned into a IP Camera which can be displayed in real-time 
 
 \paragraph{A Video Overview}
 \label{sec:video}
+A screen record video has been uploaded to the repository of this project,
+at \href{https://raw.githubusercontent.com/gagallo7/ArduinoAquaponics/master/demo.webm}{GitHub},
+where the LED lights represent the FSM's states as follows:
 
+\begin{table}
+    \centering
+    \caption{Circuit LED representation}
+
+    \begin{tabular}[h]{|l|l|}
+        \hline
+        Green   & Water is being cycled by a pump
+        \\\hline
+        Red     & pH is below the minimum desired value
+        \\\hline
+        Blue    & pH is in the normal range
+        \\\hline
+        Yellow  & pH is above the minimum desired value
+        \\\hline
+
+    \end{tabular}
+\end{table}
 
 \begin{figure}[h]
     \centering
-    \includegraphics[width=.7\textwidth]{img/gui1.png}
-    \caption{An initial version of the GUI}
-    \label{fig:gui}
-\end{figure}
-
-\begin{figure}[h]
-    \centering
-    \includegraphics[width=.7\textwidth]{img/gui2.png}
-    \caption{Using G4P plugin for Processing as the GUI library}
+    \includegraphics[width=.7\textwidth]{img/gui4.png}
+    \caption{A screenshot of the GUI with the all 4 led highlighted}
     \label{fig:g4p}
 \end{figure}
