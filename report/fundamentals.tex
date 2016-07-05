@@ -3,11 +3,11 @@
 \subsection{Background}
 
 An extensive research has been made aiming at some basic Aquaponics knowledge and previous Aquaponics automation projects.
-The idea for creating a water cycle has came from \cite{simpleArduinoAquaponics},
+The idea for creating a period water cycle has came from \cite{simpleArduinoAquaponics},
 where a simple project is proposed and an Arduino only automates this very feature of the system.
 But the system design of the former project with 3 tanks and 1 second water cycle will not be applied,
 the \cite{Kretzinger2015} uses a simpler approach with only 2 tanks and a periodic water cycle,
-with the difference that the period is much longer.
+with the difference that the latter's period is much longer.
 
 There are some projects that uses multiples microcontrollers,
 like \cite{GarethColeman2014},
@@ -16,5 +16,100 @@ For the sake of simplification,
 this project focuses on using only one microcontroller.
 
 \subsection{Technologies}
+\subsubsection{Arduino}
+Arduino is an open-source prototyping platform that provides general purpose input/output (GPIO) ports to be controlled by a programmable microprocessor \cite{arduino_intro}.
+The GPIO feature allows the platform to control several output like: Light-Emitting Diodes (LEDs) brightness,
+Motors velocity and even publish something online.
+Some input control examples are: read a sensor value,
+detect a touch on a touch-enabled screen, 
+read an email and detect button interactions.
+
+To program the microcontroller,
+only a USB cable and a program uploader is needed,
+the latter is provided by the Arduino IDE,
+which is an open-source software.
+This interface could be used for direct serial communication between Computer and the board.
+
+There are shields which are hardware expansions to the default platform.
+Shields can be connected to the main Arduino board to grant new features,
+such as Ethernet communication.
+
+This platform is massively used in various types of electronic projects ---
+such as 3D printing, IoT, robotics and embedded systems ---
+since it is an inexpensive hardware with a participative open-source community,
+and lots of contributed tutorials and libraries available.
+Besides,
+the Arduino IDE runs in most computers,
+because is compatible with Linux, MacOS and Windows.
+
+The Arduino version used in this project is the Arduino UNO Revision 3.
+The table \ref{uno_table} shows the main characteristics from this board.
+
+\begin{table}[h]
+\centering
+\caption{Main Arduino UNO specifications \cite{arduino_overview}}
+\label{uno_table}
+\begin{tabular}{ll}
+\textbf{Microcontroller}             & ATmega328P                                           \\
+\textbf{Operating Voltage}           & 5V                                                   \\
+\textbf{Input Voltage (recommended)} & 7-12V                                                \\ \textbf{Input Voltage (limit)}       & 6-20V                                                \\
+\textbf{Digital I/O Pins}            & 14 (of which 6 provide PWM output)                   \\
+\textbf{PWM Digital I/O Pins}        & 6                                                    \\
+\textbf{Analog Input Pins}           & 6                                                    \\
+\textbf{DC Current per I/O Pin}      & 20 mA                                                \\
+\textbf{DC Current for 3.3V Pin}     & 50 mA                                                \\
+\textbf{Flash Memory}                & 32 KB (ATmega328P)of which 0.5 KB used by bootloader \\
+\textbf{Clock Speed}                 & 16 MHz                                              
+\end{tabular}
+\end{table}
+
+\subsubsection{Sensors}
+The pH probe is an equipment that can be submerged into the water to measure its pH level.
+It is necessary for this project as a required component of \ref{req2}.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=.5\textwidth]{img/phProbe.jpg}
+    \caption{pH Probe at the top, protoboard interface at the bottom left and the USB interface at the bottom right \cite{dfrobot_analog}}
+    \label{fig:phProbe}
+\end{figure}
+
+It is difficult to find the pH Sensor individually, 
+the entire probe-kit is sold.
+The pH probe shown in the figure \ref{fig:phProbe} is originated from the DFRobot factory.
+To extract the actual pH level from the input voltage,
+an example code was provided,
+the reasoning follows: take 10 measurements,
+sort them,
+take the 6 values from the center to remove noisy values,
+average the extract values and apply the formula \ref{pH_formula}.
+
+\begin{align}
+    millivolts &= \frac{averageVoltageValue \times 5}{1024 \times 6}  \label{pH_formula} \\
+    pH &= 3.5 \times millivolts
+\end{align}
+
+
 \subsection{Related work}
-%\subsection{Conclusion}
+There are some automated Aquaponics projects available on the Internet,
+but most of them doesn't have a good documentation.
+So it has been needed to grab parts of information among every material found on Internet.
+One of the best sources found was from a hackaday's post from \cite{GarethColeman2014},
+which describes with decent detail how they achieved the construction of their Arduino-powered Aquaponics system.
+
+The solution for the requirement of periodic water cycle \ref{req1} is based on the cstewart000's Instructable \cite{simpleArduinoAquaponics},
+where the objective is to make a very simple automated system,
+with only \ref{req1} as case use.
+Although this work shows the recommended time proportion between water cycling activation and deactivation of 15 minutes per hour,
+as well as a simple code.
+
+Additionally,
+the water pH Control feature \ref{req2} is extracted from Simonson's solution \cite{elder_austin_simonson_hyduino},
+which presents the idea of using peristaltic pumps to regulate the pH level.
+
+In order to demonstrate the proof of concept without any physical building,
+there is a video with a Graphical User Interface in the section \ref{sec:video},
+which the user can simulate how the system responds to the undesired pH values in the tank.
+This video is made based on the IP Capture library for Processing \cite{ipcapture_2016},
+that makes feasible to render life video from a IP camera,
+hence it is possible to watch what happens with the Arduino in real-time when one changes a sensor value.
