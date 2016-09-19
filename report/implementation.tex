@@ -150,48 +150,51 @@ resembling what happens in a real-world environment.
     if the pH reaches levels greater than 7,
     deposit the low pH water in to the tank.
 
-    \begin{figure}[h]
-        \centering
-        \includegraphics[width=.7\textwidth]{diagrams/pH_Control}
-        \caption{A FSM to represent how the system keeps the pH at secure levels}
-        \label{fig:fsm_pHc}
-    \end{figure}
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=.7\textwidth]{diagrams/pH_Control}
+    \caption{A FSM to represent how the system keeps the pH at secure levels}
+    \label{fig:fsm_pHc}
+\end{figure}
 
-\begin{lstlisting}[style=Arduino, caption=pH Control First Code, label=lst:ph1]
- /*  Keeps pH level around 6.5 */
+\begin{Code}
+    \centering
+    \begin{lstlisting}[style=Arduino, caption=pH Control First Code, label=lst:ph1]
+    /*  Keeps pH level around 6.5 */
 
-// Which pin is connected with the pH Sensor?
-const int pHsensorPIN = 5;
-// Which pins are connected with the pH peristaltic pumps?
-const int high_phPIN = 6;
-const int low_phPIN = 7;
+    // Which pin is connected with the pH Sensor?
+    const int pHsensorPIN = 5;
+    // Which pins are connected with the pH peristaltic pumps?
+    const int high_phPIN = 6;
+    const int low_phPIN = 7;
 
-// pH Limits
-const int lowestPH = 6;
-const int highestPH = 7;
+    // pH Limits
+    const int lowestPH = 6;
+    const int highestPH = 7;
 
-void setup() {
-  // Sets the pHsensorPIN as the output
-  pinMode(pHsensorPIN, OUTPUT);
-}
-
-void loop() {
-    pHRawValue = analogRead (pHsensorPIN);
-    // Transform raw value into the actual one
-    pH = process(pHRawValue);
-
-    if ( pH < lowestPH ) {
-        // Turning on the high pH pump
-        digitalWrite ( high_phPIN, HIGH );
-        // Guaranteeing that the low pH pump is off
-        digitalWrite ( low_phPIN, LOW );
+    void setup() {
+        // Sets the pHsensorPIN as the output
+        pinMode(pHsensorPIN, OUTPUT);
     }
-    else if ( pH < highestPH ) {
-        // Turning on the high pH pump
-        digitalWrite ( high_phPIN, LOW );
-        // Guaranteeing that the low pH pump is off
-        digitalWrite ( low_phPIN, HIGH );
+
+    void loop() {
+        pHRawValue = analogRead (pHsensorPIN);
+        // Transform raw value into the actual one
+        pH = process(pHRawValue);
+
+        if ( pH < lowestPH ) {
+            // Turning on the high pH pump
+            digitalWrite ( high_phPIN, HIGH );
+            // Guaranteeing that the low pH pump is off
+            digitalWrite ( low_phPIN, LOW );
+        }
+        else if ( pH < highestPH ) {
+            // Turning on the high pH pump
+            digitalWrite ( high_phPIN, LOW );
+            // Guaranteeing that the low pH pump is off
+            digitalWrite ( low_phPIN, HIGH );
+        }
     }
-}
-\end{lstlisting}
+    \end{lstlisting}
+\end{Code}
 

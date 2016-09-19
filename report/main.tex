@@ -20,6 +20,11 @@ backend=biber,
 %citestyle=authoryear 
 ]{biblatex}
 
+\usepackage{float}
+
+\floatstyle{plain} % optionally change the style of the new float
+\newfloat{Code}{H}{myc}
+
 \addbibresource{jabref.bib}
 
 \title{Armoniacs: Automatized Aquaponics with Arduino}
@@ -54,7 +59,7 @@ backend=biber,
 \label{objectives}
 \input{objectives}
 
-\section{Theoretical Fundamentals}
+\section{Theoretical Background and Related Work}
 \label{fundamentals}
 \input{fundamentals}
 
@@ -73,7 +78,8 @@ backend=biber,
 \label{evaluation}
 \input{evaluation}
 
-\section{Conclusion and Future Work}
+\newpage
+\section{Conclusion}
 \label{conclusion}
 \input{conclusion}
 
@@ -92,6 +98,7 @@ backend=biber,
 
 %% \input{poc}
 
+\newpage
 \nocite{useCaseStyle}
 \printbibliography
 

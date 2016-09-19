@@ -30,8 +30,7 @@ for every use case,
 there are the execution of every phase of V-model,
 as if the product would have only one use case.
 
-Curiously,
-after some research about the flaws of V-model,
+After some research about the flaws of V-model,
 a variation of the V-model has been found and it shares the fundamental difference between this work's approach and V-model:
 the Dual V-model \cite{clark2009system}.
 The shared idea is: divide and conquer V-model, 
@@ -48,16 +47,24 @@ they can be integrated to create the final product.
     \item[$\bullet$ Specification / System Design] Section \ref{sec:design}
     \item[$\bullet$ Architectural Design / System Architecture] Section  \ref{sec:architecture}
     \item[$\bullet$ Detail Design / Module Design] Section \ref{implementation}
-    \item[$\bullet$ Unit Testing] 
-    \item[$\bullet$ Integration Testing] 
-    \item[$\bullet$ System Testing] 
+    \item[$\bullet$ Unit Testing] Section \ref{sec:video}
+    \item[$\bullet$ Integration Testing] Section \ref{sec:video}
+    \item[$\bullet$ System Testing] Section \ref{sec:video}
     \item[$\bullet$ User Acceptance Testing] Not used, because we are building a proof of concept.
 \end{description}
 
 
+In order to demonstrate the proof of concept without any physical building,
+there is a video with a Graphical User Interface in the section \ref{sec:video},
+which the user can simulate how the system responds to the undesired pH values in the tank.
+This video is made based on the IP Capture library for Processing \cite{ipcapture_2016},
+that makes feasible to render life video from a IP camera,
+hence it is possible to watch what happens with the Arduino in real-time when one changes a sensor value.
+
 \subsection{Use Cases}
 \label{sec:useCases}
 \input{useCases/waterCycleControl}
+\newpage
 \input{useCases/phControl}
 
 \subsubsection{Summary table}
@@ -118,7 +125,7 @@ and behaves as an signal amplifier.
 \subsection{System Architecture}
 \label{sec:architecture}
 
-At the figure \ref{sec:architecture} the low-level design is illustrated.
+Figure \ref{sec:architecture} illustrates the low-level design.
 Based on the figure \ref{fig:highLevelSystemDesign},
 the figure \ref{fig:waterCycleDiagram} depicts a model to automatize the water cycle control from the requirement \ref{req1}.
 Now one can see where to connect each terminal and every important component is presented.
